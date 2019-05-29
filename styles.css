@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans HK', arial;
+  font-weight: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  background-color: #202229;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#navbar li {
+ margin: 0 60px;
+ padding-top: 13px;
+}
+#navbar a {
+  text-decoration: none; 
+  color: white;
+}
+#navbar a:hover {
+  color: #00FFFF;
+  transition: color 0.35s ease-in 0s;
+}
+#welcome-section {
+  text-align: center;
+  background-color: #202229;
+  height:99.4vh;
+  color: white;
+  font-size: 25px;
+  border-bottom: 5px solid #00FFFF;
+}
+#welcome-section h1 {
+  padding: 40vh 0;
+  font-weight: 100;
+}
+span {
+  color: #E00555;
+}
+#about {
+  background-color: white;
+  margin: 0px 30px 80px 30px;
+  height: 90vh;
+}
+#about-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 14vh;
+  /*justify-content: space-between;*/
+}
+#about h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#description {
+  width: 50vw;
+  padding-right: 8px;
+}
+#description p {
+  padding-top: 25vh;
+}
+#skills-bars {
+  width: 50vw;
+  padding-left: 8px;
+}
+.bar {
+  background-color: #EDEDED;
+  width: 100%;
+  height: 38px;
+  margin-bottom: 5px;
+  text-align: right;
+  
+}
+.html-skills {
+  width: 50%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.css-skills {
+  width: 50%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.cplusplus-skills {
+  width: 65%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.java-skills {
+  width: 65%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.c-skills {
+  width: 45%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.git-skills {
+  width: 70%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.html-skills p {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.css-skills p {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.cplusplus-skills p {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.java-skills p {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.c-skills p {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.git-skills p {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #EDEDED;
+  text-align: center;
+  text-transform: uppercase;
+}
+#proj-start {
+  margin-top: 60px;
+}
+.project-tile {
+  text-align: center;
+  margin: 20px 50px;
+  height: 700px;
+}
+.project-tile h3 {
+  margin-bottom : 20px;
+}
+#contact {
+  background-color: white;
+  height: 80vh;
+  text-align: center;
+}
+#contact h2 {
+  margin: 150px 0 25px 0;
+  text-transform: uppercase;
+}
+#contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15vh 0;
+}
+#github-link {
+  padding-top: 9px;
+}
+#codepen-link {
+  margin-top: -4px;
+}
+#linkedin-link {
+  padding-top: 3px;
+}
+#email-link {
+  margin-top: -2px;
+}
+#footer {
+  height: 13vh;
+  background-color: #1A1718;
+  text-align: center;
+  border-top: 5px solid #00FFFF;
+  color: #535353;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#footer p {
+  padding: 6vh 0 0 0;
+}
+@media only screen and (max-width: 710px) {
+  #navbar {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  #navbar ul {
+    flex-wrap: nowrap;
+  }
+  #navbar li {
+    margin: 0 10px;
+  }
+  #welcome-section h1 {
+    padding: 25vh 0;
+  }
+  .project-tile {
+    margin: 50px 5px;
+  }
+  #contact h2 {
+    margin: 50px 0 25px 0;
+    }
+}

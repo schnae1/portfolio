@@ -60,12 +60,12 @@ span {
 #about-content {
   display: flex;
   flex-direction: row;
-  padding-top: 14vh;
+  padding-top: 5vh;
   /*justify-content: space-between;*/
 }
 #about h2 {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -89,17 +89,22 @@ span {
   
 }
 .html-skills {
-  width: 50%;
+  width: 45%;
   height: 38px;
   background-color: #00FFFF;
 }
 .css-skills {
-  width: 50%;
+  width: 45%;
   height: 38px;
   background-color: #00FFFF;
 }
 .cplusplus-skills {
   width: 65%;
+  height: 38px;
+  background-color: #00FFFF;
+}
+.skills-js {
+  width: 55%;
   height: 38px;
   background-color: #00FFFF;
 }
@@ -114,7 +119,7 @@ span {
   background-color: #00FFFF;
 }
 .git-skills {
-  width: 70%;
+  width: 50%;
   height: 38px;
   background-color: #00FFFF;
 }

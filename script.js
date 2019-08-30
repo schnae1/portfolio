@@ -28,6 +28,13 @@ function showMore() {
   $("#more").fadeIn(4000);
 }
 
+function submitForm() {
+  var frm = document.getElementsByName('contact-form')[0];
+  frm.submit(); // Submit the form
+  frm.reset();  // Reset all form data
+  return false; // Prevent page refresh
+}
+
 $(document).ready(function(){
   
   if($(document).width() >= 765 ) {

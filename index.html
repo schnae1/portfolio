@@ -152,7 +152,7 @@
    <p>Have a question or want to work together?<p>
    
    <div id="contact-box">
-     <form id="contact-form" method="POST" action="send.php">
+     <form id="contact-form" name="contact-form" method="POST" action="send.php">
        <label for="name">Name</label><br>
        <input type="text" name="name" required><br>
      
@@ -162,7 +162,7 @@
        <label for="message">Message</label><br>
        <textarea type="text" name="message" required></textarea><br>
 
-       <input id="submit-button" type="submit" value="Submit">
+       <input id="submit-button" type="button" value="Submit" onclick="submitForm()">
      </form>
    </div>
    

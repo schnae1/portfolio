@@ -2,167 +2,198 @@
 <html lang="en">
 
 <head>
+  <title>Eric Schnackenberg</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eric's portfolio site">
+  <meta name="author" content="Eric Schnackenberg">
   <link rel="stylesheet" href="styles.css">
-  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   
   <!-- Navigation Bar -->
   <nav id="navbar">
-     <ul>
-       <li><a class="nav-link" href="#welcome-section">Home</li>
-       <li><a class="nav-link" href="#about">About</li>
-       <li><a class="nav-link" href="#projects">Work</li>
-       <li><a class="nav-link" href="#contact">Contact</li>
-     </ul>
-  </nav>
+    <ul>
+      <li><a class="nav-link" href="#welcome-section">Home</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+ </nav>
 
-  <!-- Home/Welcome Section -->
-  <section id="welcome-section"><a name="welcome-section"></a>
-    <h1>Hello, I'm <span>Eric</span>.</br>I'm an aspiring full-stack web developer.</h1>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about">
-      <h2>About</h2>
-    
-      <div id="about-content">
-        <div id="description">
-          <p>I'm currently studying computer science at the University of Nevada, Las Vegas and will graduate in the Fall of 2019. I'm also woking on becoming a full-stack web devloper.</p>
-        </div>
-      
-        <div id="skills-bars">
-          <p>HTML</p>
-          <div class="bar">
-            <div class="html-skills"><p>50%</p></div>
-          </div>
-
-          <p>CSS</p>
-          <div class="bar">
-            <div class="css-skills"><p>50%</p></div>
-          </div>
-
-         <!-- <p>JavaScript</p>
-          <div class="bar">
-            <div class="skills js">65%</div>
-          </div> -->
-
-          <p>C++</p>
-          <div class="bar">
-            <div class="cplusplus-skills"><p>65%</p></div>
-          </div>
-          
-          <p>Java</p>
-          <div class="bar">
-            <div class="java-skills"><p>65%</p></div>
-          </div>
-          
-          <p>C</p>
-          <div class="bar">
-            <div class="c-skills"><p>45%</p></div>
-          </div>
-          
-          <p>Git</p>
-          <div class="bar">
-            <div class="git-skills"><p>70%</p></div>
-          </div>
-          
-        </div>
-    </div>
-    
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    
-    <div id="proj-start">
-      <h2>Projects</h2>
-    </div>
-    
-    <div class="project-tile">
-      <!-- Inserted inorder to pass test -->
-      <a href="https://codepen.io/schnae1/pen/GaMWoX/"></a>
-      
-      <!-- Tribute Page -->
-      <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-user="schnae1" data-slug-hash="GaMWoX" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Tribute Page">
-  <span>See the Pen <a href="https://codepen.io/schnae1/pen/GaMWoX/">
-  Tribute Page</a> by schnae1 (<a href="https://codepen.io/schnae1">@schnae1</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-    </div>
-     
-  <!-- Survey Form -->  
-  <div class="project-tile">
-      <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-user="schnae1" data-slug-hash="RmjVJb" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Survey Form">
-  <span>See the Pen <a href="https://codepen.io/schnae1/pen/RmjVJb/">
-  Survey Form</a> by schnae1 (<a href="https://codepen.io/schnae1">@schnae1</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-  </div>
-  
-  <!-- Product Landing Page -->  
-  <div class="project-tile">
-    <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-user="schnae1" data-slug-hash="wbPExZ" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Product Landing Page">
-  <span>See the Pen <a href="https://codepen.io/schnae1/pen/wbPExZ/">
-  Product Landing Page</a> by schnae1 (<a href="https://codepen.io/schnae1">@schnae1</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-  </div>
-  
-  <!-- Technical Documentation Page -->  
-  <div class="project-tile">
-    <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-user="schnae1" data-slug-hash="EzErLZ" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Technical Documentation Page">
-  <span>See the Pen <a href="https://codepen.io/schnae1/pen/EzErLZ/">
-  Technical Documentation Page</a> by schnae1 (<a href="https://codepen.io/schnae1">@schnae1</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-  </div>   
-    
-  </section>
-  
-
-  <!-- How to contact me. -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Have a question or want to work together?<p>
-    <div id="contact-links">
+ <!-- Home/Welcome Section -->
+ <section id="welcome-section"><a name="welcome-section"></a>
+   <!--<h1>Hello, I'm <span id="my-name">Eric</span>.</br>I'm an aspiring full-stack web developer.</h1>-->
+   <h1 id="typing1"></h1></br>
+   <h1 id="typing2"></h1>
+   <div id="more"><a id="about-link" href="#about">Learn More</a></div>
+ </section>
  
-      <div id="email-link">
-      <a href="mailto:example@gmail.com">
-        <img src="http://clipart-library.com/image_gallery/205347.png" width="100" height="100"/> 
-      </a>
-      </div>
-      
-      <div id="codepen-link">
-      <a id="profile-link" href="https://codepen.io/schnae1/" target="_blank">
-        <img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" width="90" height="90" alt="Codepen Profile">
-      </a>
-      </div>
-      
-      <div id="linkedin-link">
-      <a id="profile-link" href="https://www.linkedin.com/in/eric-schnackenberg-11421a51" target="_blank">
-        <img src="https://i.postimg.cc/pXr6Hydd/In-Blue-40-2x.png" alt="LinkedIn Profile">
-      </a>
-      </div>
-      
-      <div id="github-link">
-      <a href="https://github.com/schnae1" target="_blank">
-        <img src="https://i.postimg.cc/C5Z4nBXM/Git-Hub-Mark-64px.png" alt="GitHub Profile">
-      </a>
-      </div>
-      
-    </div>
-    
-  </section>
+ <!-- About Section -->
+ <section id="about">
+   <h2><u>About</u></h2>
+   
+     <div id="about-content">
+       
+       <div id="me">
+        
+         <img id="img" src="https://raw.githubusercontent.com/schnae1/images/master/me.jpg" alt="A pic of me"/>
+       </div>
+       
+       <div id="description">
+         <p>I’m also a husband, father of three, who loves fishing, shooting, watching sports, skateboarding, experimenting with BBQ recipes and spending time with family and friends.
+</p></br>
+         <p>I study computer science at the University of Nevada, Las Vegas and will be graduating in the fall of 2019 (Hallelujah!).</p></br>
+       
+         <p>I have a passion for finding solutions and solving real world problems.</p></br>
+  
+          <p>Some of the tools that I am learning to use to accomplish this are JavaScript, HTML, CSS, React, React Native, JQuery, MySQL, Python, and API frameworks.</p></br>
+          <p>I get excited when I learn new things and hope to continue to progress as I seek to break into the full stack web development and mobile development industry!</p></br>
+       
+          <p>Feel free to check out my work.</p>
+       </div>
 
-  <footer id="footer">
-    <p>Eric &copy;<span>2019</span></p>
-  <footer>
-    
+   </div>
+   
+ </section>
+
+ <!-- Projects Section -->
+ <section id="projects">
+   
+
+     <h2><u>Projects</u></h2>
+
+   
+   <div class="project-tiles"> 
+     
+     <div class="tile">
+       <a href="https://schnae1.github.io/RandomQuoteMachine/index.html" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/randomquotemachine.png"
+              alt="Random Quote Machine Website" />
+       </a>
+       <h3>Random Quote Machine</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://schnae1.github.io/LandingPage/index.html" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/landingpage.png"
+              alt="Sample Landing Page" />
+       </a>
+       <h3>Landing Page</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://schnae1.github.io/techdoc/index.html" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/techdoc.png"
+              alt="Technical Documentation Page" />
+       </a>
+       <h3>Technical Documentation Page</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://codepen.io/schnae1/full/OJLbooo" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/pomodoroclock.png"
+              alt="React Pomodoro Clock" />
+       </a>
+       <h3>React Pomodoro Clock</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://schnae1.github.io/fantasyfootballnotify" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/FFnotify.png"
+              alt="Project Page Image" />
+       </a>
+       <h3>Python Fantasy Football Notifier</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://codepen.io/schnae1/full/BaBjYWZ" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/drummachine.png"
+              alt="React Drum Machine" />
+       </a>
+       <h3>React Drum Machine</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://schnae1.github.io/durablepriceupdate" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/priceupdater.png"
+              alt="Project Page Image" />
+       </a>
+       <h3>Java Price Updater</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://schnae1.github.io/JavascriptCalculator/index.html" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/JavaScriptCalculator.png"
+              alt="JavaScript Calculator" />
+       </a>
+       <h3>JavaScript Calculator</h3>
+     </div>
+     
+     <div class="tile">
+       <a href="https://codepen.io/schnae1/full/dxqLeV" target="_blank">
+         <img src="https://raw.githubusercontent.com/schnae1/images/master/markdown.png"
+              alt="React Markdown Previewer" />
+       </a>
+       <h3>React Markdown Previewer</h3>
+     </div>
+     
+   </div>   
+   
+ </section>
+ 
+
+ <!-- How to contact me. -->
+ <section id="contact">
+   <h2><u>Contact</u></h2>
+   <p>Have a question or want to work together?<p>
+   
+   <div id="contact-box">
+     <form id="contact-form">
+       <label for="name">Name</label></br>
+       <input type="text" name="name" required></br>
+     
+       <label for="email">Email</label></br>
+       <input type="email" name="email" required></br>
+   
+       <label for="message">Message</label></br>
+       <textarea type="text" name="message" required></textarea></br>
+
+       <input id="submit-button" type="submit" value="Submit">
+     </form>
+   </div>
+   
+   <div id="contact-links">
+     
+     <div id="codepen-link">
+       <a id="profile-link" href="https://codepen.io/schnae1/" target="_blank">
+         <i id="codepen" class="fa fab fa-codepen fa-4x"></i>
+       </a>
+     </div>
+     
+     <div id="linkedin-link">
+       <a id="profile-link" href="https://www.linkedin.com/in/eric-schnackenberg-11421a51" target="_blank">
+         <i id="linkedin" class="fa fab fa-linkedin fa-4x"></i>
+       </a>
+     </div>
+     
+     <div id="github-link">
+       <a href="https://github.com/schnae1" target="_blank">
+         <i id="github" class="fa fab fa-github fa-4x"></i>
+       </a>
+     </div>
+     
+   </div>
+
+   
+ </section>
+
+ <footer id="footer">
+   <p>Eric &copy;<span>2019</span></p>
+ <footer>
+   
 </body>
 </html>

@@ -219,10 +219,10 @@ span {
   padding: 10vh 0;
   color: black;
 }
-#linkedin, #codepen, #github {
+#linkedin, #codepen, #github, #email {
   color: black;
 }
-#linkedin:hover, #codepen:hover, #github:hover {
+#linkedin:hover, #codepen:hover, #github:hover, #email:hover {
   color: #0ff;
   transition: color 0.05s ease-in 0s;
 }

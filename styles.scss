@@ -165,9 +165,6 @@ span {
   opacity: 0.5;
   transform: scale(1.05);
 }
-.tile h3 {
-  
-}
 #contact {
   background-color: white;
   min-height: 90vh;
@@ -219,10 +216,10 @@ span {
   padding: 10vh 0;
   color: black;
 }
-#linkedin, #codepen, #github {
+#linkedin, #codepen, #github, #email{
   color: black;
 }
-#linkedin:hover, #codepen:hover, #github:hover {
+#linkedin:hover, #codepen:hover, #github:hover, #email:hover {
   color: #00FFFF;
   transition: color 0.05s ease-in 0s;
 }

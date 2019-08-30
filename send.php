@@ -7,5 +7,5 @@
     $formcontent="From: $name \n Message: $message";
     $mailheader = "From: $email \r\n";
     mail($to, $subject, $formcontent, $mailheader) or die("Error!");
-    echo "Thank You!";
+    readfile("thanks.html");
 ?>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
 body {
   display: flex;
   flex-direction: column;
@@ -25,15 +26,15 @@ body {
   list-style: none;
 }
 #navbar li {
-  margin: 0 60px;
-  padding-top: 13px;
+ margin: 0 60px;
+ padding-top: 13px;
 }
 .nav-link {
-  text-decoration: none;
+  text-decoration: none; 
   color: white;
 }
 .nav-link:hover {
-  color: #0ff;
+  color: #00FFFF;
   transition: color 0.35s ease-in 0s;
 }
 #welcome-section {
@@ -43,16 +44,16 @@ body {
   align-items: center;
   text-align: center;
   background-color: #202229;
-  height: 100vh;
+  height:100vh;
   color: white;
-  border-bottom: 5px solid #0ff;
+  border-bottom: 5px solid #00FFFF;
 }
 #welcome-section h1 {
   font-weight: 100;
   padding: 0px;
   font-size: 50px;
-  border-right: 5px solid #e00555;
-  animation: blink 0.5s step-end infinite;
+  border-right: 5px solid #E00555;
+  animation: blink .5s step-end infinite;
 }
 #more {
   display: none;
@@ -61,27 +62,23 @@ body {
   position: absolute;
   bottom: 0;
   margin-bottom: 60px;
-}
-#more a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 20px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+  }
 }
 #more:hover {
-  border: solid 2px #0ff;
+  border: solid 2px #00FFFF;
   transition: color 0.05s ease-in 0s;
 }
 @keyframes blink {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #e00555;
-  }
+  from, to { border-color: transparent }
+  50% { border-color: #E00555 }
 }
 span {
-  color: #e00555;
+  color: #E00555;
 }
 #about {
   background-color: white;
@@ -134,7 +131,7 @@ span {
 #projects {
   display: flex;
   flex-direction: column;
-  background-color: #ededed;
+  background-color: #EDEDED;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 25px;
@@ -162,7 +159,7 @@ span {
   margin: 20px;
 }
 .tile img {
-  width: 100%;
+  width: 100%;;
 }
 .tile:hover {
   opacity: 0.5;
@@ -179,7 +176,7 @@ span {
 }
 #contact-box {
   max-width: 600px;
-  background-color: #ededed;
+  background-color: #EDEDED;
   margin: 25px auto;
   text-align: left;
   border-radius: 5px;
@@ -188,29 +185,29 @@ span {
 #contact-form {
   padding: 20px;
   color: #202229;
-}
-#contact-form textarea {
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  height: 200px;
-  font-size: 15px;
-}
-#contact-form input {
-  height: 30px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 17px;
-}
-#contact-form #submit-button {
-  margin-top: 20px;
-  margin-left: 25%;
-  width: 50%;
-  background-color: #535353;
-  color: white;
-  cursor: pointer;
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 200px;
+    font-size: 15px;
+  }
+  input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+  }
+  #submit-button {
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+    background-color: #535353;
+    color: white;
+    cursor: pointer;
+  }
 }
 #contact-links {
   display: flex;
@@ -219,11 +216,11 @@ span {
   padding: 10vh 0;
   color: black;
 }
-#linkedin, #codepen, #github, #email {
+#linkedin, #codepen, #github, #email{
   color: black;
 }
 #linkedin:hover, #codepen:hover, #github:hover, #email:hover {
-  color: #0ff;
+  color: #00FFFF;
   transition: color 0.05s ease-in 0s;
 }
 #footer {
@@ -233,7 +230,7 @@ span {
   height: 10vh;
   background-color: #202229;
   text-align: center;
-  border-top: 5px solid #0ff;
+  border-top: 5px solid #00FFFF;
   color: #535353;
   font-size: 14px;
   text-transform: uppercase;
@@ -272,5 +269,5 @@ span {
   }
   #contact h2 {
     margin: 50px 0 25px 0;
-  }
+    }
 }

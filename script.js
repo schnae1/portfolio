@@ -1,5 +1,5 @@
 let line1 = "Hello, I'm Eric.";
-let line2 = "I'm an aspiring full-stack web developer.";
+let line2 = "I'm an aspiring full stack web developer.";
 var i = 0;
 var j = 0;
 
@@ -26,6 +26,7 @@ function startTypeWriter(){
 
 function showMore() {
   $("#more").fadeIn(4000);
+  $("#navbar").fadeIn(4000);
 }
 
 function submitForm() {
@@ -42,8 +43,9 @@ $(document).ready(function(){
     setTimeout(showMore, 6500);
   } else {
     $("#typing2").remove();
-    $("#typing1").html("<h1>Hello, I'm <span>Eric</span>.</br>I'm an aspiring full-stack web developer.</h1>");
-    $("#more").fadeIn(1000);
+    $("#typing1").html("<h1>Hello, I'm <span>Eric</span>.</br>I'm an aspiring full stack web developer.</h1>");
+    $("#more").fadeIn(2000);
+    $("#navbar").fadeIn(2000);
   }    
   
 });

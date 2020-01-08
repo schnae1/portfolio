@@ -26,7 +26,6 @@ function startTypeWriter(){
 
 function showMore() {
   $("#more").fadeIn(4000);
-  $("#navbar").fadeIn(4000);
 }
 
 function submitForm() {
@@ -39,6 +38,7 @@ function submitForm() {
 $(document).ready(function(){
   
   if($(document).width() >= 765 ) {
+    $("#navbar").fadeIn(1500);
     startTypeWriter();
     setTimeout(showMore, 6500);
   } else {

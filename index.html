@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146827730-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-146827730-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-146827730-1');
+      gtag('config', 'UA-146827730-1');
     </script>
 
-  <title>Eric Schnackenberg</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eric's portfolio site">
-  <meta name="author" content="Eric Schnackenberg">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-</head>
-<body>
-  
-  <!-- Navigation Bar -->
-  <nav id="navbar">
-    <ul>
-      <li><a class="nav-link" href="#welcome-section">Home</a></li>
-      <li><a class="nav-link" href="#about">About</a></li>
-      <li><a class="nav-link" href="#projects">Projects</a></li>
-      <li><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
- </nav>
+    <title>Eric Schnackenberg</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eric's portfolio site" />
+    <meta name="author" content="Eric Schnackenberg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <ul>
+        <li><a class="nav-link" href="#welcome-section">Home</a></li>
+        <!-- <li><a class="nav-link" href="#about">About</a></li> -->
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
- <!-- Home/Welcome Section -->
- <section id="welcome-section"><a name="welcome-section"></a>
-   <!--<h1>Hello, I'm <span id="my-name">Eric</span>.<br>I'm an aspiring full-stack web developer.</h1>-->
-   <h1 id="typing1"></h1><br>
-   <h1 id="typing2"></h1>
-   <div id="more"><a id="about-link" href="#about">Learn More</a></div>
- </section>
- 
- <!-- About Section -->
- <section id="about">
+    <!-- Home/Welcome Section -->
+    <section id="welcome-section">
+      <a name="welcome-section"></a>
+      <!--<h1>Hello, I'm <span id="my-name">Eric</span>.<br>I'm an aspiring full-stack web developer.</h1>-->
+      <h1 id="typing1"></h1>
+      <br />
+      <h1 id="typing2"></h1>
+      <div id="more"><a id="about-link" href="#projects">Learn More</a></div>
+    </section>
+
+    <!-- About Section -->
+    <!-- <section id="about">
    <h2><u>About</u></h2>
    
      <div id="about-content">
@@ -68,164 +76,212 @@
 
    </div>
    
- </section>
+ </section> -->
 
- <!-- Projects Section -->
- <section id="projects">
-   
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2><u>Projects</u></h2>
 
-     <h2><u>Projects</u></h2>
+      <div class="project-tiles">
+        <div class="tile">
+          <a href="https://heuristic-pare-79dbe1.netlify.com" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/screencapture-heuristic-pare-79dbe1-netlify-2019-10-01-19_03_29.png"
+              alt="Foodies React App"
+            />
+          </a>
+          <h3>Foodies React App</h3>
+        </div>
 
-   
-   <div class="project-tiles"> 
+        <div class="tile">
+          <a href="https://connectvolunteers.org/" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/connectvolunteers.png"
+              alt="Social Media Website"
+            />
+          </a>
+          <h3>Social Media Website</h3>
+        </div>
 
-    <div class="tile">
-      <a href="https://heuristic-pare-79dbe1.netlify.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/schnae1/images/master/screencapture-heuristic-pare-79dbe1-netlify-2019-10-01-19_03_29.png"
-              alt="Foodies React App" />
-      </a>
-      <h3>Foodies React App</h3>
-    </div>
+        <div class="tile">
+          <a
+            href="https://schnae1.github.io/RandomQuoteMachine/index.html"
+            target="_blank"
+          >
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/randomquotemachine.png"
+              alt="Random Quote Machine Website"
+            />
+          </a>
+          <h3>Random Quote Machine</h3>
+        </div>
 
-    <div class="tile">
-      <a href="https://connectvolunteers.org/" target="_blank">
-        <img src="https://raw.githubusercontent.com/schnae1/images/master/connectvolunteers.png"
-              alt="Social Media Website" />
-      </a>
-      <h3>Social Media Website</h3>
-    </div>
-     
-     <div class="tile">
-       <a href="https://schnae1.github.io/RandomQuoteMachine/index.html" target="_blank">
-         <img src="https://raw.githubusercontent.com/schnae1/images/master/randomquotemachine.png"
-              alt="Random Quote Machine Website" />
-       </a>
-       <h3>Random Quote Machine</h3>
-     </div>
-     
-     <div class="tile">
-       <a href="https://schnae1.github.io/LandingPage/index.html" target="_blank">
-         <img src="https://raw.githubusercontent.com/schnae1/images/master/landingpage.png"
-              alt="Sample Landing Page" />
-       </a>
-       <h3>Landing Page</h3>
-     </div>
-     
-     <div class="tile">
-       <a href="https://codepen.io/schnae1/full/OJLbooo" target="_blank">
-         <img src="https://raw.githubusercontent.com/schnae1/images/master/pomodoroclock.png"
-              alt="React Pomodoro Clock" />
-       </a>
-       <h3>React Pomodoro Clock</h3>
-     </div>
+        <div class="tile">
+          <a
+            href="https://schnae1.github.io/LandingPage/index.html"
+            target="_blank"
+          >
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/landingpage.png"
+              alt="Sample Landing Page"
+            />
+          </a>
+          <h3>Landing Page</h3>
+        </div>
 
-     <div class="tile">
-      <a href="https://schnae1.github.io/JavascriptCalculator/index.html" target="_blank">
-        <img src="https://raw.githubusercontent.com/schnae1/images/master/JavaScriptCalculator.png"
-              alt="JavaScript Calculator" />
-      </a>
-      <h3>JavaScript Calculator</h3>
-    </div>
+        <div class="tile">
+          <a href="https://codepen.io/schnae1/full/OJLbooo" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/pomodoroclock.png"
+              alt="React Pomodoro Clock"
+            />
+          </a>
+          <h3>React Pomodoro Clock</h3>
+        </div>
 
-      <div class="tile">
-        <a href="https://codepen.io/schnae1/full/dxqLeV" target="_blank">
-          <img src="https://raw.githubusercontent.com/schnae1/images/master/markdown.png"
-                alt="React Markdown Previewer" />
-        </a>
-        <h3>React Markdown Previewer</h3>
+        <div class="tile">
+          <a
+            href="https://schnae1.github.io/JavascriptCalculator/index.html"
+            target="_blank"
+          >
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/JavaScriptCalculator.png"
+              alt="JavaScript Calculator"
+            />
+          </a>
+          <h3>JavaScript Calculator</h3>
+        </div>
+
+        <div class="tile">
+          <a href="https://codepen.io/schnae1/full/dxqLeV" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/markdown.png"
+              alt="React Markdown Previewer"
+            />
+          </a>
+          <h3>React Markdown Previewer</h3>
+        </div>
+
+        <div class="tile">
+          <a href="https://codepen.io/schnae1/full/BaBjYWZ" target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/drummachine.png"
+              alt="React Drum Machine"
+            />
+          </a>
+          <h3>React Drum Machine</h3>
+        </div>
+
+        <div class="tile">
+          <a
+            href="https://schnae1.github.io/techdoc/index.html"
+            target="_blank"
+          >
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/techdoc.png"
+              alt="Technical Documentation Page"
+            />
+          </a>
+          <h3>Technical Documentation Page</h3>
+        </div>
+
+        <div class="tile">
+          <a
+            href="https://schnae1.github.io/fantasyfootballnotify"
+            target="_blank"
+          >
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/FFnotify.png"
+              alt="Project Page Image"
+            />
+          </a>
+          <h3>Python Fantasy Football Notifier</h3>
+        </div>
+
+        <div class="tile">
+          <a
+            href="https://schnae1.github.io/durablepriceupdate"
+            target="_blank"
+          >
+            <img
+              src="https://raw.githubusercontent.com/schnae1/images/master/priceupdater.png"
+              alt="Project Page Image"
+            />
+          </a>
+          <h3>Java Price Updater</h3>
+        </div>
       </div>
-     
-    <div class="tile">
-      <a href="https://codepen.io/schnae1/full/BaBjYWZ" target="_blank">
-        <img src="https://raw.githubusercontent.com/schnae1/images/master/drummachine.png"
-            alt="React Drum Machine" />
-      </a>
-      <h3>React Drum Machine</h3>
-    </div>
+    </section>
 
-    <div class="tile">
-      <a href="https://schnae1.github.io/techdoc/index.html" target="_blank">
-        <img src="https://raw.githubusercontent.com/schnae1/images/master/techdoc.png"
-              alt="Technical Documentation Page" />
-      </a>
-      <h3>Technical Documentation Page</h3>
-    </div>
+    <!-- How to contact me. -->
+    <section id="contact">
+      <h2><u>Contact</u></h2>
+      <p>Have a question?</p>
+      <p></p>
 
-    <div class="tile">
-      <a href="https://schnae1.github.io/fantasyfootballnotify" target="_blank">
-        <img src="https://raw.githubusercontent.com/schnae1/images/master/FFnotify.png"
-              alt="Project Page Image" />
-      </a>
-      <h3>Python Fantasy Football Notifier</h3>
-    </div>
-     
-     <div class="tile">
-       <a href="https://schnae1.github.io/durablepriceupdate" target="_blank">
-         <img src="https://raw.githubusercontent.com/schnae1/images/master/priceupdater.png"
-              alt="Project Page Image" />
-       </a>
-       <h3>Java Price Updater</h3>
-     </div>
+      <!-- <div id="contact-box">
+        <form
+          id="contact-form"
+          name="contact-form"
+          method="POST"
+          action="send.php"
+          target="_blank"
+        >
+          <label for="name">Name</label><br />
+          <input type="text" name="name" required /><br />
 
-   </div>   
-   
- </section>
- 
+          <label for="email">Email</label><br />
+          <input type="email" name="email" required /><br />
 
- <!-- How to contact me. -->
- <section id="contact">
-   <h2><u>Contact</u></h2>
-   <p>Have a question or want to work together?<p>
-   
-   <div id="contact-box">
-     <form id="contact-form" name="contact-form" method="POST" action="send.php" target="_blank">
-       <label for="name">Name</label><br>
-       <input type="text" name="name" required><br>
-     
-       <label for="email">Email</label><br>
-       <input type="email" name="email" required><br>
-   
-       <label for="message">Message</label><br>
-       <textarea type="text" name="message" required></textarea><br>
+          <label for="message">Message</label><br />
+          <textarea type="text" name="message" required></textarea><br />
 
-       <input id="submit-button" type="button" value="Submit" onclick="submitForm()">
-     </form>
-   </div>
-   
-   <div id="contact-links">
+          <input
+            id="submit-button"
+            type="button"
+            value="Submit"
+            onclick="submitForm()"
+          />
+        </form>
+      </div> -->
 
-      <div id="email-link">
+      <div id="contact-links">
+        <!-- <div id="email-link">
           <a href="mailto:eric@ericsportfolio.site">
             <i id="email" class="fa fas fa-envelope fa-4x"></i>
           </a>
+        </div> -->
+
+        <div id="codepen-link">
+          <a
+            id="profile-link"
+            href="https://codepen.io/schnae1/"
+            target="_blank"
+          >
+            <i id="codepen" class="fa fab fa-codepen fa-4x"></i>
+          </a>
+        </div>
+
+        <div id="linkedin-link">
+          <a
+            id="profile-link"
+            href="https://www.linkedin.com/in/eric-schnackenberg-11421a51"
+            target="_blank"
+          >
+            <i id="linkedin" class="fa fab fa-linkedin fa-4x"></i>
+          </a>
+        </div>
+
+        <div id="github-link">
+          <a href="https://github.com/schnae1" target="_blank">
+            <i id="github" class="fa fab fa-github fa-4x"></i>
+          </a>
+        </div>
       </div>
-     
-     <div id="codepen-link">
-       <a id="profile-link" href="https://codepen.io/schnae1/" target="_blank">
-         <i id="codepen" class="fa fab fa-codepen fa-4x"></i>
-       </a>
-     </div>
-     
-     <div id="linkedin-link">
-       <a id="profile-link" href="https://www.linkedin.com/in/eric-schnackenberg-11421a51" target="_blank">
-         <i id="linkedin" class="fa fab fa-linkedin fa-4x"></i>
-       </a>
-     </div>
-     
-     <div id="github-link">
-       <a href="https://github.com/schnae1" target="_blank">
-         <i id="github" class="fa fab fa-github fa-4x"></i>
-       </a>
-     </div>
-     
-   </div>
+    </section>
 
-   
- </section>
-
- <footer id="footer">
-   <p>Eric &copy;<span>2019</span></p>
- </footer>
-   
-</body>
+    <footer id="footer">
+      <p>Eric &copy;<span>2020</span></p>
+    </footer>
+  </body>
 </html>

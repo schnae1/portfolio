@@ -43,7 +43,7 @@ $(document).ready(function () {
   } else {
     $('#typing2').remove();
     $('#typing1').html(
-      "<h1>Hello, I'm <span>Eric</span>.</br>I'm an aspiring full stack web developer.</h1>"
+      "<h1>Hello, I'm <span>Eric</span>.</br>I'm a software engineer.</h1>"
     );
     $('#more').fadeIn(2000);
     $('#navbar').fadeIn(2000);

@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.navbar > li {
+  margin: 0 60px;
+  padding-top: 13px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #0ff;
+  transition: color 0.35s ease-in 0s;
+}
+

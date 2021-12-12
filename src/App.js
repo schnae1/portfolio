@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from './components/NavBar';
+import Navbar from './components/Navbar';
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from './components/Home';
@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 export default function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Navbar />
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/projects' element={<Projects />} />

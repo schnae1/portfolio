@@ -1,17 +1,18 @@
 .navbar {
+  background-color: #202229;
   display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
-  text-transform: uppercase;
-  padding-top: 15px;
+  justify-content: right;
+  padding: 20px 0px;
 }
 
-.navbar > li {
-  margin: 0 60px;
-  padding-top: 13px;
+.links {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
 }
 
 .nav-link {
+  margin: 0 60px;
   text-decoration: none;
   color: white;
 }
@@ -19,5 +20,11 @@
 .nav-link:hover {
   color: #0ff;
   transition: color 0.35s ease-in 0s;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-link {
+    margin: 0 20px;
+  }
 }
 

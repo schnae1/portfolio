@@ -1,6 +1,12 @@
 .home {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 6vh;
+}
+
+.typewriter-container {
+  width: 75vw;
+  text-align: center;
 }

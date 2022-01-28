@@ -3,7 +3,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 5vh;
+  height: 8vh;
 }
 
 .links {
@@ -11,13 +11,10 @@
   list-style-type: none;
   text-transform: uppercase;
   font-size: 16px;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .nav-link {
-  margin: 0 60px;
+  margin: 0 35px;
   text-decoration: none;
   color: white;
 }
@@ -35,13 +32,3 @@
     font-size: 14px;
   }
 }
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-

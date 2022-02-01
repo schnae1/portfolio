@@ -26,13 +26,11 @@ export default function Home() {
           }}
         />
       </div>
-      <Link to="/about">
-        <button
-          className={showButton ? 'show-more-button' : 'hide-more-button'}
-          onClick={null}
-        >
-          Learn More
-        </button>
+      <Link
+        to="/about"
+        className={showButton ? 'show-more-button' : 'hide-more-button'}
+      >
+        Learn More
       </Link>
     </div>
   );

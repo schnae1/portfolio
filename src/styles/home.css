@@ -14,13 +14,15 @@
 
 .hide-more-button {
   visibility: hidden;
-  margin-top: 10vh;
   font-size: 16px;
   padding: 6px;
+  position: fixed;
+  bottom: 20vh;
 }
 
 .show-more-button {
-  margin-top: 10vh;
+  position: fixed;
+  bottom: 20vh;
   background-color: #202229;
   border: 2px solid white;
   border-radius: 4px;
@@ -30,6 +32,7 @@
   cursor: pointer;
   font-size: 16px;
   padding: 6px;
+  text-decoration: none;
   animation: fadein 2s;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */

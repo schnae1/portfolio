@@ -1,34 +1,18 @@
-.navbar {
+.bg-navbar-custom {
   background-color: #202229;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  height: 8vh;
 }
 
-.links {
-  display: flex;
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size: 16px;
+.nav-custom {
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 
-.nav-link {
-  margin: 0 35px;
-  text-decoration: none;
-  color: white;
+.nav-link-custom {
+  color: white !important;
 }
 
-.nav-link:hover {
-  color: #0ff;
-  transition: color 0.35s ease-in 0s;
-}
-
-@media only screen and (max-width: 700px) {
-  .nav-link {
-    margin: 0 20px;
-  }
-  .links {
-    font-size: 14px;
-  }
+.nav-link-custom:hover {
+  color: #0ff !important;
+  transition: color 0.35s ease-in 0s !important;
 }

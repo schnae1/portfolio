@@ -1,21 +1,14 @@
 .home {
-  min-height: 92vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 8vh;
-}
-
-.typewriter-container {
-  width: 75vw;
   text-align: center;
 }
 
 .hide-more-button {
   visibility: hidden;
-  font-size: 16px;
-  padding: 6px;
   position: fixed;
   bottom: 20vh;
 }
@@ -23,16 +16,7 @@
 .show-more-button {
   position: fixed;
   bottom: 20vh;
-  background-color: #202229;
-  border: 2px solid white;
-  border-radius: 4px;
-  color: white;
-  text-align: center;
-  outline: none;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 6px;
-  text-decoration: none;
+  background-color: #202229 !important;
   animation: fadein 2s;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -40,8 +24,8 @@
 }
 
 .show-more-button:hover {
-  border: 2px solid #0ff;
-  color: #0ff;
+  border: #0ff !important;
+  background-color: #0ff !important;
   transition: color 0.55s ease-in 0s;
 }
 

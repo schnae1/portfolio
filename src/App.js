@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (

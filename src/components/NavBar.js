@@ -1,32 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
+import Navbar from 'react-bootstrap/NavBar';
+import Nav from 'react-bootstrap/Nav';
 
 export default function NavBar() {
   return (
-    <div className="navbar">
-      <div className="links">
-        <li>
-          <Link className="nav-link" to="/">
+    <Navbar
+      bg="navbar-custom"
+      variant="dark"
+      collapseOnSelect
+      fixed="top"
+      expand="lg"
+    >
+      <Navbar.Toggle className="mx-3" />
+      <Navbar.Collapse>
+        <Nav className="nav-custom" navbar>
+          <Nav.Link className="nav-link-custom px-4" href="/">
             Home
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link" to="/projects">
+          </Nav.Link>
+          <Nav.Link className="nav-link-custom px-4" href="/projects">
             Projects
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link" to="/about">
+          </Nav.Link>
+          <Nav.Link className="nav-link-custom px-4" href="/about">
             About
-          </Link>
-        </li>
-        <li>
-          <Link className="nav-link" to="/contact">
+          </Nav.Link>
+          <Nav.Link className="nav-link-custom px-4" href="/contact">
             Contact
-          </Link>
-        </li>
-      </div>
-    </div>
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }

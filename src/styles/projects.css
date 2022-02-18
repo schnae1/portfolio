@@ -1,5 +1,5 @@
-.projects {
-  min-height: 92vh;
+.container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

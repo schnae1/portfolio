@@ -1,0 +1,18 @@
+.bg-navbar-custom {
+  background-color: #202229;
+}
+
+.nav-custom {
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.nav-link-custom {
+  color: white !important;
+}
+
+.nav-link-custom:hover {
+  color: #0ff !important;
+  transition: color 0.35s ease-in 0s !important;
+}

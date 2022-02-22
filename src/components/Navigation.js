@@ -1,19 +1,18 @@
 import React from 'react';
 import '../styles/navbar.css';
-import NavBar from 'react-bootstrap/navbar';
-import Nav from 'react-bootstrap/nav';
+import { Navbar, Nav } from 'react-bootstrap';
 
-export default function Navbar() {
+export default function Navigation() {
   return (
-    <NavBar
+    <Navbar
       bg="navbar-custom"
       variant="dark"
       collapseOnSelect
       fixed="top"
       expand="lg"
     >
-      <NavBar.Toggle className="mx-3" />
-      <NavBar.Collapse>
+      <Navbar.Toggle className="mx-3" />
+      <Navbar.Collapse>
         <Nav className="nav-custom" navbar>
           <Nav.Link className="nav-link-custom px-4" href="/">
             Home
@@ -28,7 +27,7 @@ export default function Navbar() {
             Contact
           </Nav.Link>
         </Nav>
-      </NavBar.Collapse>
-    </NavBar>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }

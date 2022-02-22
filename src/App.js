@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar } from 'react-bootstrap';
+import Navigation from './components/Navigation';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navigation />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/projects" element={<Projects />} />

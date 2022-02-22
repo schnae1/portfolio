@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/home.css';
 import Typewriter from 'typewriter-effect';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
+import { Button, Container } from 'react-bootstrap';
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);

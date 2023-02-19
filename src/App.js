@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DirtyDining from './components/DirtyDining';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/dirty-dining-api" element={<DirtyDining />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -14,5 +14,5 @@
 
 .nav-link-custom:hover {
   color: #0ff !important;
-  transition: color 0.35s ease-in 0s !important;
+  transition: 0.35s ease-in 0s !important;
 }

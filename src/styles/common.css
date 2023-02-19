@@ -1,0 +1,10 @@
+.containers {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+#line {
+  width: 60vw;
+  color: #0ff;
+  margin-bottom: 0.5rem;
+}

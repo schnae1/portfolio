@@ -1,0 +1,76 @@
+#input-column {
+  width: 70%;
+}
+
+#button-column {
+  width: 20%;
+}
+
+#search-button {
+  width: 100%;
+  background-color: #202229 !important;
+}
+
+#search-button:hover {
+  background-color: #e00555 !important;
+  transition: color 0.55s ease-in 0s;
+}
+
+#legend-row {
+  margin-top: 3px;
+}
+
+#grades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 3px;
+}
+
+.grade-labels {
+  padding-right: 1px;
+}
+
+#closed-badge {
+  background-color: darkorange !important  ;
+}
+
+#restaurant-card-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant-row {
+  width: 100%;
+  background-color: red;
+}
+
+.restaurant-card {
+  width: 70%;
+  margin: 0 auto;
+  /* border: 2px solid white !important; */
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .grades {
+    flex-direction: column;
+  }
+
+  #input-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #input-column {
+    width: 100%;
+  }
+
+  #button-column {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

@@ -9,7 +9,6 @@ export function getBaseURL() {
 export function formatDate(utcDate) {
   if (utcDate) {
     let formattedDate = new Date(utcDate);
-    console.log('formatted date: ' + formattedDate);
     return formattedDate.toLocaleDateString('en-us', {
       weekday: 'long',
       year: 'numeric',

@@ -22,7 +22,6 @@ export default function DirtyDining() {
   const [page, setPage] = useState(0);
 
   const submitHandler = (event) => {
-    console.log('Page: ' + page);
     setPage(0);
     sendRequest();
     if (event && event.preventDefault) {

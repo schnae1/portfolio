@@ -1,3 +1,7 @@
+#input-form {
+  margin-top: 15px;
+}
+
 #input-column {
   width: 70%;
 }
@@ -17,7 +21,7 @@
 }
 
 #legend-row {
-  margin-top: 3px;
+  margin-top: 25px;
 }
 
 #grades {
@@ -42,21 +46,53 @@
 }
 
 .restaurant-row {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  background-color: red;
+  margin-top: 25px;
 }
 
 .restaurant-card {
   width: 70%;
-  margin: 0 auto;
-  /* border: 2px solid white !important; */
   color: black;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: 0;
+}
+
+.restaurant-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.restaurant-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-title-section {
+  padding-left: 1rem;
+}
+
+#nav-row {
+  flex-direction: row;
+  padding: 5px 0 15px 0;
+  justify-content: center;
+}
+
+.nav-button {
+  width: 25%;
+  margin: 0 5px 0 5px;
+}
+
+.nav-button:hover {
+  background-color: #e00555 !important;
+  transition: color 0.55s ease-in 0s;
 }
 
 @media only screen and (max-width: 768px) {
-  .grades {
+  #grades {
     flex-direction: column;
   }
 
@@ -72,5 +108,13 @@
   #button-column {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .restaurant-heading {
+    flex-direction: column;
+  }
+
+  .restaurant-title-section {
+    padding: 0;
   }
 }

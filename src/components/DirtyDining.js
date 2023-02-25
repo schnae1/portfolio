@@ -1,9 +1,9 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import '../styles/dirtydining.css';
 import '../styles/common.css';
-import { getBaseURL } from '../utils.js';
+import { getBaseURL, formatDate, titleCase } from '../utils.js';
 import {
   Container,
   Row,
@@ -17,40 +17,14 @@ import {
 
 export default function DirtyDining() {
   const [restaurants, setRestuarants] = useState([]);
-  const [size, setSize] = useState('');
   const [totalPages, setTotalPages] = useState('');
-  const [totalResults, setTotalResults] = useState('');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(0);
-  const [inputSize, setInputSize] = useState(10);
-  const [previousButtonActive, setPreviousButtonActive] = useState(false);
-  const [nextButtonActive, setNextButtonActive] = useState(false);
-
-  useEffect(() => {
-    // console.log('Changed Restaurants: ', restaurants);
-    // console.log('Changed Size: ', size);
-    // console.log('Changed Total Pages: ', totalPages);
-    // console.log('Changed Total Results: ', totalResults);
-    console.log('Current Page: ', page);
-  }, [restaurants, size, totalPages, totalResults, page]);
 
   const submitHandler = (event) => {
     console.log('Page: ' + page);
-    axios
-      .get(getBaseURL() + '/api/v1/restaurant/search', {
-        params: { query, page, size: inputSize },
-      })
-      .then((res) => {
-        setRestuarants([...res?.data?.restaurants]);
-        setSize(res?.data?.size);
-        setTotalPages(res?.data?.totalPages);
-        setTotalResults(res?.data?.totalResults);
-        setNextButtonActive(page < res?.data?.totalPages);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-
+    setPage(0);
+    sendRequest();
     if (event && event.preventDefault) {
       event.preventDefault();
     }
@@ -58,11 +32,75 @@ export default function DirtyDining() {
 
   const getNextPage = () => {
     setPage(page + 1);
-    submitHandler();
+    sendRequest();
   };
+
   const getPreviousPage = () => {
     setPage(page - 1);
-    submitHandler();
+    sendRequest();
+  };
+
+  const sendRequest = () => {
+    axios
+      .get(getBaseURL() + '/api/v1/restaurant/search', {
+        params: { query, page, size: 10 },
+      })
+      .then((res) => {
+        setRestuarants([...res?.data?.restaurants]);
+        setTotalPages(res?.data?.totalPages);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
+  const getGrade = (grade) => {
+    switch (grade) {
+      case 'A':
+        return (
+          <h1 className="grade-labels">
+            <Badge bg="success">A</Badge>
+          </h1>
+        );
+      case 'B':
+        return (
+          <h2 className="grade-labels">
+            <Badge bg="warning">B</Badge>
+          </h2>
+        );
+      case 'C':
+        return (
+          <h2 className="grade-labels">
+            <Badge bg="danger">C</Badge>
+          </h2>
+        );
+      case 'P':
+        return (
+          <h2 className="grade-labels">
+            <Badge bg="primary">P</Badge>
+          </h2>
+        );
+      case 'X':
+        return (
+          <h2 className="grade-labels">
+            <Badge id="closed-badge">X</Badge>
+          </h2>
+        );
+      case 'N':
+        return (
+          <h2 className="grade-labels">
+            <Badge bg="secondary">N</Badge>
+          </h2>
+        );
+      case 'O':
+        return (
+          <h2 className="grade-labels">
+            <Badge bg="info">O</Badge>
+          </h2>
+        );
+      default:
+        return null;
+    }
   };
 
   return (
@@ -92,7 +130,7 @@ export default function DirtyDining() {
         </p>
       </Row>
 
-      <Form onSubmit={submitHandler}>
+      <Form id="input-form" onSubmit={submitHandler}>
         <Row>
           <Col id="input-column" sm={8} md={8} lg={8}>
             <Form.Control
@@ -143,21 +181,25 @@ export default function DirtyDining() {
         {restaurants.map((restaurant) => (
           <Row className="restaurant-row" key={restaurant.id}>
             <Card className="restaurant-card">
-              <Card.Body>
-                <Card.Title>{restaurant.restaurantName}</Card.Title>
-                <Card.Text>Current Grade: {restaurant.currentGrade}</Card.Text>
+              <Card.Header className="restaurant-heading">
+                {getGrade(restaurant.currentGrade)}
+                <div className="restaurant-title-section">
+                  <Card.Title>
+                    {titleCase(restaurant.restaurantName)}
+                  </Card.Title>
+                  <Card.Subtitle>
+                    {restaurant.address}, {restaurant.cityName}, NV{' '}
+                    {restaurant.zipCode}
+                  </Card.Subtitle>
+                </div>
+              </Card.Header>
+              <Card.Body className="restaurant-card-body">
                 <Card.Text>
-                  Current Grade Date: {restaurant.dateCurrent}
+                  Last inspected on {formatDate(restaurant.dateCurrent)}
                 </Card.Text>
                 <Card.Text>
-                  Previous Grade: {restaurant.previousGrade}
-                </Card.Text>
-                <Card.Text>
-                  Previous Grade Date: {restaurant.datePrevious}
-                </Card.Text>
-                <Card.Text>
-                  {restaurant.address}, {restaurant.cityName}, NV{' '}
-                  {restaurant.zipCode}
+                  Previously inspected on {formatDate(restaurant.datePrevious)}{' '}
+                  {'\u2022 '} Grade {restaurant.previousGrade}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -166,14 +208,22 @@ export default function DirtyDining() {
       </CardGroup>
 
       {totalPages > 1 && page < totalPages && (
-        <Row>
+        <Row id="nav-row">
           {page > 0 && (
-            <Button onClick={getPreviousPage} variant="outline-light">
+            <Button
+              className="nav-button"
+              onClick={getPreviousPage}
+              variant="outline-light"
+            >
               Previous
             </Button>
           )}
           {page < totalPages && (
-            <Button onClick={getNextPage} variant="outline-light">
+            <Button
+              className="nav-button"
+              onClick={getNextPage}
+              variant="outline-light"
+            >
               Next
             </Button>
           )}

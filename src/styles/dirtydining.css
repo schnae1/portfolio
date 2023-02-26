@@ -110,11 +110,7 @@
     margin-top: 1rem;
   }
 
-  .restaurant-heading {
-    flex-direction: column;
-  }
-
-  .restaurant-title-section {
-    padding: 0;
+  .restaurant-card {
+    width: 95%;
   }
 }
